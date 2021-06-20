@@ -1,0 +1,11 @@
+extends CanvasLayer
+
+var coins=0
+
+func _ready():
+	$Coins.text = String(coins)
+
+
+func _on_Dude_coins_collected():
+	coins= coins+1
+	_ready()
